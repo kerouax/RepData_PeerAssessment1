@@ -8,9 +8,6 @@ output:
 ---
 
 
-```
-## Error in setwd("L:/R/Courses/JHU - 5 Reproducible Research/Peer_assesment_1"): cannot change working directory
-```
 
 ***
 ## Overview
@@ -54,45 +51,14 @@ activity <- read.table(unzip("./Activity.zip", exdir=".", overwrite=TRUE), heade
 if (!require("dplyr")) {
     install.packages("dplyr")
 }
-```
-
-```
-## Loading required package: dplyr
-## 
-## Attaching package: 'dplyr'
-## 
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(dplyr)
 if (!require("ggplot2")) {
     install.packages("ggplot2")
 }
-```
-
-```
-## Loading required package: ggplot2
-```
-
-```r
 library(ggplot2)
 if (!require("lubridate")) {
     install.packages("lubridate")
 }
-```
-
-```
-## Loading required package: lubridate
-```
-
-```r
 library(lubridate)
 ```
 
